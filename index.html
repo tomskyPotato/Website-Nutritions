@@ -1,10 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zahlen und Operationen</title>
 </head>
 <body>
-    <h1>Thomas</h1>
+    <h1>Zahlen in Kästchen mit Operationen</h1>
+    
+    <div>
+        <label for="number1">Zahl 1:</label>
+        <input type="number" id="number1" value="0">
+    </div>
+    <div>
+        <label for="number2">Zahl 2:</label>
+        <input type="number" id="number2" value="0">
+    </div>
+
+    <div>
+        <button onclick="addNumbers()">Addieren</button>
+        <button onclick="subtractNumbers()">Subtrahieren</button>
+        <button onclick="multiplyNumbers()">Multiplizieren</button>
+        <button onclick="divideNumbers()">Dividieren</button>
+    </div>
+
+    <h2>Ergebnis: <span id="result">0</span></h2>
+
+    <script>
+        function addNumbers() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            document.getElementById('result').innerText = num1 + num2;
+        }
+
+        function subtractNumbers() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            document.getElementById('result').innerText = num1 - num2;
+        }
+
+        function multiplyNumbers() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            document.getElementById('result').innerText = num1 * num2;
+        }
+
+        function divideNumbers() {
+            var num1 = parseFloat(document.getElementById('number1').value);
+            var num2 = parseFloat(document.getElementById('number2').value);
+            if (num2 !== 0) {
+                document.getElementById('result').innerText = num1 / num2;
+            } else {
+                document.getElementById('result').innerText = 'Division durch 0 nicht möglich!';
+            }
+        }
+    </script>
 </body>
 </html>
