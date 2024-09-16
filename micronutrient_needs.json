@@ -1,0 +1,22 @@
+[
+    {"name": "Calcium", "recommended_intake_mg": 1000},
+    {"name": "Iron", "recommended_intake_mg": 8},
+    {"name": "Magnesium", "recommended_intake_mg": 400},
+    {"name": "Zinc", "recommended_intake_mg": 11},
+    {"name": "Vitamin A", "recommended_intake_mcg": 900},
+    {"name": "Vitamin C", "recommended_intake_mg": 90},
+    {"name": "Vitamin D", "recommended_intake_mcg": 15},
+    {"name": "Vitamin E", "recommended_intake_mg": 15},
+    {"name": "Vitamin K", "recommended_intake_mcg": 120},
+    {"name": "Folate (Vitamin B9)", "recommended_intake_mcg": 400},
+    {"name": "Vitamin B12", "recommended_intake_mcg": 2.4},
+    {"name": "Selenium", "recommended_intake_mcg": 55},
+    {"name": "Iodine", "recommended_intake_mcg": 150},
+    {"name": "Copper", "recommended_intake_mcg": 900},
+    {"name": "Manganese", "recommended_intake_mg": 2.3},
+    {"name": "Phosphorus", "recommended_intake_mg": 700},
+    {"name": "Potassium", "recommended_intake_mg": 4700},
+    {"name": "Sodium", "recommended_intake_mg": 1500},
+    {"name": "Choline", "recommended_intake_mg": 550},
+    {"name": "Fluoride", "recommended_intake_mg": 4}
+]

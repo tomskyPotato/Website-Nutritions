@@ -55,5 +55,18 @@
             }
         }
     </script>
+    <script>
+        fetch('micronutrient_needs.json')
+        .then(response => response.json())
+        .then(data => {
+            let output = "<h2>Empfohlene Mikronährstoffmengen</h2><ul>";
+            data.forEach(nutrient => {
+                output += `<li>${nutrient.name}: ${nutrient.recommended_intake_mg || nutrient.recommended_intake_mcg} mg/µg pro Tag</li>`;
+            });
+            output += "</ul>";
+            document.getElementById('nutrients').innerHTML = output;
+        })
+        .catch(error => console.error('Fehler beim Laden der Mikronährstoffdaten:', error));
+    </script>
 </body>
 </html>
