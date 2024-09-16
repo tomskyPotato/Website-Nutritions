@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zahlen und Operationen</title>
+    <title>Zahlen und Operationen & Mikronährstoffe</title>
 </head>
 <body>
     <h1>Zahlen in Kästchen mit Operationen</h1>
@@ -25,6 +25,9 @@
     </div>
 
     <h2>Ergebnis: <span id="result">0</span></h2>
+
+    <h2>Mikronährstoffe:</h2>
+    <div id="nutrients">Wird geladen...</div>
 
     <script>
         function addNumbers() {
@@ -54,8 +57,7 @@
                 document.getElementById('result').innerText = 'Division durch 0 nicht möglich!';
             }
         }
-    </script>
-    <script>
+        
         fetch('micronutrient_needs.json')
         .then(response => response.json())
         .then(data => {
